@@ -2,13 +2,16 @@
 <router-outlet></router-outlet>
 
 <main>
-    <section class="home">
+    <section id="home" class="home">
         <div class="photo-florian"></div>
         <div class="section-text">Je m'appelle Florian, j'ai 21 ans et j'étudie la Cybersécurité à Aix-en-Provence (13).
         </div>
+        <div class="scroll">
+            <div class="down"></div>
+        </div>
     </section>
-    <section class="about">
-        <h1>A PROPOS</h1>
+    <section id="about" class="about">
+        <h1 class="title">A PROPOS</h1>
         <div class="about-container">
             <div class="text">
                 <h2>Qui je suis ?</h2>
@@ -23,6 +26,8 @@
                     défendre ses valeurs : <strong>RESPECT, SERVICE, INTEGRITE et EXCELLENCE</strong>.<br /><br />En
                     dehors de tout ça, j'aime le sport et je pratique occasionnellement du piano. Grand fan de moto !
                 </p>
+                <p>Télécharger mon CV : <a href="../../assets/CV_ALLIONE_Florian_07-21.pdf" title="Télécharger mon CV"
+                        download="CV_ALLIONE_Florian_07-21.pdf">Cliquez ici</a></p>
             </div>
             <div class="skills">
                 <div>
@@ -35,6 +40,35 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section id="projets" class="projets">
+        <h1 class="title">MES PROJETS</h1>
+        <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+            <div class="gallery-cell"
+                style="background-image: url('../../assets/projet-ahag.png'); background-size: cover;">
+            </div>
+            <div class="gallery-cell"
+                style="background-image: url('../../assets/projet-daedz.png'); background-size: cover;">
+            </div>
+            <div class="gallery-cell"
+                style="background-image: url('../../assets/projet-shadowit.png'); background-size: cover;"></div>
+            <div class="gallery-cell"
+                style="background-image: url('../../assets/projet-stephiplace.png'); background-size: cover;"></div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h1 class="title">ME CONTACTER</h1>
+        <form>
+            <div class="form-group">
+                <input type="email" name="email" class="form-style" placeholder="Votre Email" id="email"
+                    autocomplete="off">
+            </div>
+            <div class="form-group">
+                <textarea class="form-style textaera" name="message" id="message"
+                    placeholder="Votre message"></textarea>
+            </div>
+            <button type="submit" name="submit">Envoyer</button>
+        </form>
     </section>
 </main>
 
