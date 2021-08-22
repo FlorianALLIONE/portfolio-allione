@@ -1,0 +1,95 @@
+main {
+    min-height: 100vh;
+
+    section.home {
+        padding: 25vh 0 0 0;
+        width: 100%;
+        min-height: 100vh;
+        text-align: center;
+        background-image: url(../../assets/fond-home.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
+
+        div.photo-florian {
+            box-sizing: content-box;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 25px auto;
+            background-image: url(../../assets/photo-florian.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 100%;
+            border: 15px solid white;
+        }
+        div.section-text {
+            color: white;
+            font-weight: bold;
+            font-size: 19px;
+            margin-top: 80px;
+        }
+    }
+    section.about {
+        text-align: center;
+
+        h1 {
+            width: fit-content;
+            margin: 0 auto 20px auto;
+            margin-top: 50px;
+            font-size: 30px;
+            padding: 0 10px 15px 10px;
+            border-bottom: 4px solid rgb(0, 140, 255);
+        }
+        div.about-container {
+            display: flex;
+            justify-content: space-evenly;
+
+            .text {
+                width: 47%;
+                //background-color: green;
+                h2 {
+                    font-size: 25px;
+                    margin-bottom: 20px;
+                }
+            }
+            .skills {
+                width: 47%;
+                background-image: url(../../assets/fond-skills.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                clip-path: circle(50% at 50% 50%);
+                padding: 20px 0 30px 0;
+                div {
+                    display: flex;
+                    justify-content: space-evenly;
+
+                    p {
+                        background-color: white;
+                        width: 150px;
+                        padding: 30px 0;
+                        margin: 15px 0;
+                        border: 1px solid #289fed;
+                        box-shadow: 5px 5px 0px 0px #289eed7c, 10px 10px 0px 0px #5fb7ff80, 15px 15px 0px 0px #a1d8ff96,
+                            20px 20px 0px 0px #cae6ff88, 25px 25px 0px 0px #e1eeff80, 0px 0px 15px 4px rgba(0, 0, 0, 0);
+                        text-align: center;
+                        border-radius: 30%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    div.about-container {
+        align-items: center;
+        flex-direction: column;
+
+        .skills {
+            width: 100% !important;
+        }
+        .text {
+            width: 90% !important;
+        }
+    }
+}
